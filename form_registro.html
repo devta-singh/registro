@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="registro.php" method="post" onsubmit="if(this.leido.checked){}else{return(false);}">
+		<input type="text" id="nombre" name="nombre" value="nombre" onclick="this.select();"/>
+		<br>
+		<input type="text" id="apellidos" name="apellidos" value="apellidos" onclick="this.select();"/>
+		<br>
+		<input type="text" id="nick" name="nick" value="nick" onclick="this.select();"/>
+		<br>
+
+		<input type="text" id="email" name="email" value="email" onclick="this.select();"/>
+		<br>
+		<input type="text" id="telefono1" name="telefono1" value="telefono1" onclick="this.select();"/>
+		<br>
+		<input type="text" id="telefono2" name="telefono2" value="telefono2" onclick="this.select();"/>
+		<br>
+
+		<input type="text" id="clave" name="clave" value="clave" onclick="this.select();"/>
+		<br>
+		<input type="text" id="clave2" name="clave2" value="Repita la clave" onclick="this.select();"/>
+		<br>
+
+		<input type="checkbox" id="leido" name="leido" value="1"/>
+		<label for="leido">He leído las condiciones</label> 
+		<a href="condiciones.html" target="_BLANK" onclick="window.open('condiciones.html','_BLANK');return(false);">Ver las condiciones</a>
+		<br>
+
+		<input type="checkbox" id="acepto" name="acepto" value="1"/>
+		<label for="acepto">Acepto las condiciones</label> 
+
+		<br>
+		<input type="submit" id="envio" name="envio" value="Registrar"/>
+	</form>
+</body>
+</html>
